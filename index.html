@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>PhoneGap Sample</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta charset="utf-8">
+
+        <script type="text/javascript">
+
+        function buttonClicked() {
+			var name = document.getElementById("nameInput").value;
+			document.getElementById("hello").innerHTML = "Hello " + name + "!";
+		}
+
+        </script>
+        
+    </head>
+	
+	
+<body>
+  <h1>PhoneGap Sample</h1>
+  
+  <form>
+    名前：<input id="nameInput" type="text">
+    <input type="submit" value="Hello!" onClick="buttonClicked()">
+  </form>
+
+  <div id="hello"></div>
+  
+</body>
+
+</html>
